@@ -1,0 +1,94 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="index.css" rel="stylesheet">
+    <title>Laba 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+
+<body>
+    <header> 
+        <div class="div1">
+            <div ><button class="add1" href="#part1" onClick="document.getElementById('part1').style.display =  'block'; 
+                                                              document.getElementById('part2').style.display =  'none'; 
+                                                              document.getElementById('part3').style.display =  'none'">
+                                                              Часть 1</button></div>
+            <div ><button class="add1" href="#part2" onClick="document.getElementById('part2').style.display =  'block'; 
+                                                              document.getElementById('part1').style.display =  'none'; 
+                                                              document.getElementById('part3').style.display =  'none'">
+                                                              Часть 2</button></div>
+            <div ><button class="add1" href="#part3"onClick="document.getElementById('part3').style.display =  'block'; 
+                                                             document.getElementById('part1').style.display =  'none'; 
+                                                             document.getElementById('part2').style.display =  'none'">
+                                                             Часть 3</button></div>
+        </div>
+    </header>
+
+    <!---//////////////////////////часть 1//////////////////////////-->
+    
+    <div id='part1' style='display: none'>
+
+        <div class="task">
+
+            <div class="window">
+                <div class="textField" id="list">
+                </div>
+            </div>
+      
+            <div class="menu">
+              <input type="radio" name="place"  class="radio" > <a>В начало</a><br/>
+              <input type="radio" name="place"  class="radio"> <a>В конец</a><br/>
+              <input type="text" id="text" placeholder="Текст...">
+              <input type="color" id="color" value="#FFFFFF">
+              <button onclick="getText()" class="add">Добавить</button>
+              <button onclick="alertText()" class="statistic">Статистика</button>
+            </div>
+      
+          </div>
+    </div>
+
+
+    <!---////////////////////////////////////////часть 2///////////////////////////-->
+    <div id='part2' style='display: none'>
+
+        <div class="task">
+
+            <div class="window">
+              <div class="field" id="task2"></div>
+            </div>
+      
+            <div class="add2">
+              <button onclick="addRectangle()" class="addRect">Добавить</button>
+            </div>
+      
+        </div>
+    
+    </div>
+
+
+    <!---/////////////////////////////////////////часть 3///////////////////////////////-->
+    <div id='part3' style='display: none'>
+
+        <div class="task">
+
+            <div class="window">
+              <div id="field3" ></div>
+            </div>
+      
+            <div class="add3 ">
+                <button onclick="addBlock() " class="addRect ">Добавить</button>
+            </div>
+      
+          </div>
+    
+    </div> 
+
+
+ <!---///////////////////////////////////////подкл js///////////////////////////-->
+    <script src="index.js"></script>
+
+</body>
+</html>

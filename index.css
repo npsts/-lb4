@@ -1,0 +1,197 @@
+body{
+    background-color: black;
+}
+
+.div1{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+
+/* -------------------------часть 1---------------------*/
+
+.task {
+  display: flex;
+}
+
+.window {
+  height: auto;
+  width: 70%;
+  background-color: rgb(0, 0, 0);
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+
+#list div {
+  cursor: pointer;
+  padding-left: 4px;
+  font-size: 20px;
+  margin-top: 1px;
+  width: 100%;
+}
+
+.textField {
+  padding: 20px;
+  border: double 10px;
+  height: 418px;
+  width: 80%;
+  background-color: gray;
+  margin: auto;
+}
+
+.menu {
+  color: blue;
+  height: auto;
+  width: 30%;
+  background-color: rgb(0, 0, 0);
+  padding-top: 8%;
+  padding-bottom: 5%;
+  padding-left: 4%;
+}
+
+a {
+  font-size: 20px;
+}
+
+.statistic, .add, .add1 {
+  font-size: 20px;
+  height: 50px;
+  border: double 10px;
+  background-color: blue;
+  cursor: pointer;
+}
+
+.statistic:hover, .add:hover {
+  opacity: 0.8;
+}
+
+.add {
+  margin-top: 5%;
+  width: 60%;
+}
+
+.add1 {
+  width: 100%;
+}
+
+.statistic {
+  margin-top: 20%;
+  width: 60%;
+}
+
+#color, #text {
+  border: double 10px;
+  margin-top: 5%;
+  height: 50px;
+  width: 60%;
+}
+
+#text {
+  font-size: 17px;
+  
+}
+
+#color {
+  cursor: pointer;
+  background-color: blue;
+}
+
+.radio {
+  cursor: pointer;
+}
+
+
+
+
+/* -------------------------часть 2---------------------*/
+
+.field {
+  position: relative;
+  margin: auto;
+}
+
+.field div {
+  position: absolute;
+  width: 100%;
+}
+
+#highlight {
+  display: block;
+  cursor: pointer;
+  margin: 0;
+}
+
+#blocklight, #highlight {
+  outline: 5px double black;
+}
+
+#task2 {
+  padding: 20px;
+  border: double 10px;
+  height: 418px;
+  width: 80%;
+  background-color: gray;
+  margin: auto;
+}
+
+.add2 {
+  height: auto;
+  width: 30%;
+  background-color: rgb(0, 0, 0);
+  padding-top: 8%;
+  padding-bottom: 5%;
+  padding-left: 4%;
+}
+
+.addRect {
+  font-size: 20px;
+  height: 60px;
+  width: 80%;
+  border: double 10px;
+  background-color: blue;
+  cursor: pointer;
+}
+
+.addRect:hover {
+  opacity: 0.8;
+}
+
+
+
+
+/* -------------------------часть 3---------------------*/
+#field3 {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  position: relative;
+}
+
+#field3 div {
+  position: absolute;
+}
+
+.draggable {
+  cursor: pointer;
+}
+
+#field3 {
+  padding: 20px;
+  border: double 10px;
+  height: 418px;
+  width: 80%;
+  background-color: gray;
+  margin: auto;
+}
+
+.add3 {
+  color: blue;
+  height: auto;
+  width: 30%;
+  background-color: rgb(0, 0, 0);
+  padding-top: 8%;
+  padding-bottom: 5%;
+  padding-left: 4%;
+}
