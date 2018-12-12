@@ -195,3 +195,27 @@ label {
   padding-bottom: 5%;
   padding-left: 4%;
 }
+
+/* -------------------------часть 4---------------------*/
+
+.field {
+  position: relative;
+  margin: auto;
+}
+
+.field div {
+  position: absolute;
+  width: 100%;
+}
+
+
+#task4 {
+  padding: 20px;
+  border: double 10px;
+  height: 400px;
+  width: 600px;
+  background-color: gray;
+  margin: auto;
+}
+
+

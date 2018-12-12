@@ -237,3 +237,154 @@ function getText() {
     var b = document.body; //по всему документу
     b.style.webkitUserSelect = b.style.mozUserSelect = b.style.msUserSelect = 'none'; //добавляем свойство CSS - запретить выделение
   }
+
+
+  /*--------------------------------------------------------часть 4----------------------------------------------*/  
+  
+  part4.onmousemove = function() { 
+    x1= event.clientX; 
+    y1= event.clientY;
+    x2=x1-148;
+    y2=y1-147; 
+}
+document.ondblclick=function()
+{
+  if(x1>153&&y1>154&&x1<795&&y1<594)
+  {
+   let newRectangle = document.createElement('div');
+   newRectangle.innerHTML;
+   let task3 = document.getElementById('task4');
+   task3.appendChild(newRectangle);
+ 
+   let r = Math.floor(Math.random() * (223));
+   let g = Math.floor(Math.random() * (256));
+   let b = Math.floor(Math.random() * (256));
+   let color = '#' + r.toString(16) + g.toString(16) + b.toString(16);
+   let mbr=getRandomInt(50,200);
+   let leftPX =  x2-(mbr/2) + 'px';
+   let topPX =  y2 -(mbr/2)+ 'px';
+   let wbr=mbr+'px';
+   let qwe=mbr/2+'px';
+
+   Element.prototype.setAttributes = function(attrs) {
+     for (var idx in attrs) {
+       if ((idx === 'styles' || idx === 'style') && typeof attrs[idx] === 'object') {
+         for (var prop in attrs[idx]) {
+           this.style[prop] = attrs[idx][prop];
+         }
+       } else {
+         this.setAttribute(idx, attrs[idx]);
+       }
+     }
+   };
+ 
+   newRectangle.setAttributes({
+     'styles': {
+       'width': wbr,
+       'height': wbr,
+       'left': leftPX,
+       'top': topPX,
+       '-moz-border-radius': qwe,
+	     '-webkit-border-radius': qwe,
+       'background':color,
+       'border-radius':qwe,
+     },
+   });
+   newRectangle.setAttribute('class', 'draggable')
+  }
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*function draw()
+  {
+   //let newCanvas = document.createElement('div');
+  // newCanvas.innerHTML;
+    let task4 = document.getElementById('myCanvas');
+   // task4.appendChild(myCanvas);
+    let ctx = task4.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(x, y, radius, 0, 2 * Math.PI);
+    ctx.stroke();
+
+
+    let radiusNumber = getRandomInt(10, 300);
+    let radiusPX = radiusNumber.toString(10) + 'px';
+    let xNumber = getRandomInt(10, 550);
+    let xPX = xNumber.toString(10) + 'px';
+    let yNumber = getRandomInt(10, 350);
+    let yPX = yNumber.toString(10) + 'px';
+
+    let r = Math.floor(Math.random() * (223));
+    let g = Math.floor(Math.random() * (256));
+    let b = Math.floor(Math.random() * (256));
+    let color = '#' + r.toString(16) + g.toString(16) + b.toString(16);
+
+
+
+    Element.prototype.setAttributes = function(attrs) {
+      for (var idx in attrs) {
+        if ((idx === 'styles' || idx === 'style') && typeof attrs[idx] === 'object') {
+          for (var prop in attrs[idx]) {
+            this.style[prop] = attrs[idx][prop];
+          }
+        } else {
+          this.setAttribute(idx, attrs[idx]);
+        }
+      }
+    };
+  
+    newCanvas.setAttributes({
+      'styles': {
+
+        'backgroundColor': color,
+        'radius': radiusPX,
+        'x': xPX,
+        'y': yPX,
+        
+      },
+    });
+
+  
+    task4.onclick = function(event) {
+      let target = event.target; // где был клик?
+      if (target.className != 'task4') return; // не на rectitac? тогда не интересует
+      appendChild(myCanvas);
+      target.style.zIndex = 1000;
+    };
+  
+
+   // var c = document.getElementById("myCanvas");
+   // var ctx = c.getContext("2d");
+   // ctx.beginPath();
+   /// ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+   // ctx.stroke();
+  }*/
+
+
+
+  //<button onclick="alertText()" class="statistic">Статистика</button>
+
+ // function alertText() {
+ //   let alrt = document.getElementById('list');
+ //   let elems = alrt.children;
+ //   let fullElem = new Array();
+ //   elems = Array.prototype.slice.call(elems);
+ //   for (let i = 0; i < elems.length; i++) {
+ //     fullElem[i] = elems[i].textContent;
+ //   }
+ //   alert(fullElem.join());
+ // }
